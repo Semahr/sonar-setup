@@ -1,0 +1,11 @@
+sonar.projectKey=portal-ccolon
+sonar.projectName=Portal Ccolon
+sonar.projectVersion=1.0
+
+sonar.sources=src,server
+sonar.exclusions=**/*.spec.ts,**/*.test.ts,.next/**,node_modules/**,**/*.d.ts,**/dist/**
+sonar.sourceEncoding=UTF-8
+
+sonar.language=ts
+sonar.host.url=http://sonarqube:9000
+sonar.login=sqa_304f564258446742118874b44c0f56f1cda9c4d7
