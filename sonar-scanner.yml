@@ -1,0 +1,18 @@
+services:
+  sonar-scanner:
+    image: sonarsource/sonar-scanner-cli
+    container_name: sonar-scanner
+    platform: linux/amd64
+    volumes:
+      - ../portal-ccolon:/usr/src
+    working_dir: /usr/src
+    environment:
+      - SONAR_HOST_URL=http://sonarqube:9000
+      - SONAR_LOGIN=sqa_304f564258446742118874b44c0f56f1cda9c4d7
+    networks:
+      - sonar-network
+    entrypoint: ["sonar-scanner"]
+
+networks:
+  sonar-network:
+    external: true
