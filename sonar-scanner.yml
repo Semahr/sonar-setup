@@ -4,7 +4,7 @@ services:
     container_name: sonar-scanner
     platform: linux/amd64
     volumes:
-      - ../portal-ccolon:/usr/src
+      - /Users/jugh/dev/portal-ccolon:/usr/src
     working_dir: /usr/src
     environment:
       - SONAR_HOST_URL=http://sonarqube:9000
