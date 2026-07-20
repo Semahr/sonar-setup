@@ -2,12 +2,12 @@
 
 This project sets up **SonarQube** and the **Sonar Scanner CLI** using Podman Compose, enabling local and automated static code analysis.
 
-## 📦 Contents
+## Contents
 
 - `sonarqube.yaml`: Configures the SonarQube service.
 - `sonar-scanner.yaml`: Configures the CLI client Sonar Scanner, which connects to SonarQube.
 
-## 🚀 Requirements
+## Requirements
 
 ### Required Software
 
@@ -17,7 +17,7 @@ This project sets up **SonarQube** and the **Sonar Scanner CLI** using Podman Co
 
 ---
 
-## 📁 Structure
+## Structure
 
 ```
 .
@@ -28,7 +28,7 @@ This project sets up **SonarQube** and the **Sonar Scanner CLI** using Podman Co
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Important Variables
 
@@ -59,7 +59,7 @@ You can include additional properties such as exclusions or language settings if
 
 ---
 
-## ▶️ Usage
+## Usage
 
 ### 1. Start SonarQube
 
@@ -92,7 +92,7 @@ This will analyze the project mounted in `/usr/src` and send the report to Sonar
 
 ---
 
-## 🧠 Additional Notes
+## Additional Notes
 
 - The `sonar_data` and `sonar_extensions` volumes are created automatically from `sonarqube.yaml` and ensure SonarQube persistence across restarts.
 - You may merge both YAML files into a single `compose.yaml` if preferred.
@@ -100,7 +100,7 @@ This will analyze the project mounted in `/usr/src` and send the report to Sonar
 
 ---
 
-## 🛠 Troubleshooting
+## Troubleshooting
 
 | Problem                                   | Solution                                                  |
 |-------------------------------------------|-----------------------------------------------------------|
