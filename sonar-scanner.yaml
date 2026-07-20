@@ -4,11 +4,11 @@ services:
     container_name: sonar-scanner
     platform: linux/amd64
     volumes:
-      - /Users/jugh/dev/portal-ccolon:/usr/src
+      - /path/to/your/project:/usr/src
     working_dir: /usr/src
     environment:
       - SONAR_HOST_URL=http://sonarqube:9000
-      - SONAR_LOGIN=sqa_304f564258446742118874b44c0f56f1cda9c4d7
+      - SONAR_LOGIN=<YOUR_SONAR_TOKEN>
     networks:
       - sonar-network
     entrypoint: ["sonar-scanner"]
